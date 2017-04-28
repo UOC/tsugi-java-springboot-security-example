@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html data-layout-decorator="layout">
+
+<body>
+<div class="container" data-layout-fragment="content">
+    <h1>Tsugi Spring Boot Security <small>Authorized Area</small></h1>
+    <p class="lead">
+        If you see this page, you're successfully authenticated
+    </p>
+    <p data-sec-authorize="hasRole('ROLE_USER')">
+        This content is available to authenticated users with the <code>data-sec-authorize="hasRole('ROLE_USER')"</code> attribute
+    </p>
+    <p data-sec-authorize="hasRole('ROLE_LEARNER')">
+        This content is available to <strong>learner</strong> users with the <code>data-sec-authorize="hasRole('ROLE_LEARNER')"</code> attribute
+    </p>
+    <p data-sec-authorize="hasRole('ROLE_INSTRUCTOR')">
+        This content is available to <strong>instructor</strong> users with the <code>data-sec-authorize="hasRole('ROLE_INSTRUCTOR')"</code> attribute
+    </p>
+</div>
+</body>
+</html>

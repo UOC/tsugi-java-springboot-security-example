@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html data-layout-decorator="layout">
+
+<body>
+<div class="container" data-layout-fragment="content">
+    <h1>Tsugi Spring Boot Security <small>An example</small></h1>
+    <p class="lead">
+        This page is publicly available.
+    </p>
+
+    <div class="alert alert-info" role="alert">
+        In order to go to secured area, make your LTI consumer call (There's a test page in <a href="https://online.dr-chuck.com/sakai-api-test/lms.php">https://online.dr-chuck.com/sakai-api-test/lms.php</a>)
+        to <strong>http://localhost:8080</strong><strong data-th-text="@{/lti}">lti endpoint</strong>.
+    </div>
+
+</div>
+
+</body>
+</html>
