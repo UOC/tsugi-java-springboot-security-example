@@ -32,7 +32,7 @@
         <appender-ref ref="STDOUT"/>
     </logger>
 
-    <root level="debug"> <!--all-->
+    <root level="info"> <!--all-->
         <!--
         <appender-ref ref="FILE"/>
         -->
